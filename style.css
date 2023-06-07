@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-height: 1200px;
+    font-family: 'Imprima', sans-serif;
+  }
+  @keyframes slideIn{
+    0%{
+      transform: translateX(-100%);
+      
+    }
+    100%{transform: translateX(0%);
+  
+      
+    }
+  }
+  #menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-right: 50px;
+    list-style: none;
+  
+  }
+  #logo{
+    width: 78px;
+    height: 70px;
+  
+  }
+  .menu-item{
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  #contact-button{
+  width: 150px;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    
+  }
+  #button-text{
+    color: black;
+  }
+  #contact-button:hover{
+    background-color: #0DD7D7;
+    
+  }
+  #image-background{
+    background-image: url(/images/lab-photo.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #text-container{
+  
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  .main-text{
+    font-size: 98px;
+  
+  }
+  #about-text{
+    line-height: 50px;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    padding: 30px;
+  }
+  #about-heading{
+    height: 100%;
+  }
+  #too-small{
+  
+    display: none;
+  }
+  a,a:visited{
+    text-decoration: none;
+    color: #5A83EF;
+  }
+  a:hover{
+    position: relative;
+    bottom: 5px;
+    
+  }
+  #about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #DAF8FF;
+    flex-wrap: nowrap;
+    padding: 25px;
+    animation: 2s ease-out 0s 1 slideIn;
+    overflow: scroll;
+    
+  }
+  #about-heading{
+    margin: 15px;
+    
+  }
+  h1{
+    display: no flex;
+    animation: 2s ease-out 0s 1 slideIn;
+  }
+  #hamburger{
+    display: none;
+    width: 30px;
+    height: 30px;
+    
+    
+  }
+  #contact-form{
+    display: block;
+    margin: auto;
+  }
+  #webinars-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px;
+    background-color: #DAF8FF;
+    height: 100%;
+    min-height: 100vh;
+    overflow: scroll;
+  }
+  .card{
+    padding: 30px;
+  }
+  
+  .card:hover{
+    position: relative;
+    bottom: 5px;
+  }
+  .card-image{
+    width: 300px;
+    height: 200px
+  }
+  .card-heading{
+    text-align: center;
+  }
+  .card-text{
+    padding: 10px;
+  }
+  @media screen and (max-width: 500px) {
+    .menu-item {
+      display: none; 
+    }
+    .main-text{
+      font-size: 70px;
+    }
+    
+    #about-text{
+      padding: 0px;
+      height: 100%;
+    }
+    #about-container{
+      padding: 8px;
+      justify-content: flex-start;
+    }
+    #about-heading{
+      margin: 15px;
+    }
+    
+    #hamburger{
+      display: block;
+      margin-top: 50%;
+    }
+  }
+  
