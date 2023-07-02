@@ -39,13 +39,16 @@
     height: 50px;
     border-radius: 40px;
     border: none;
+    background-color: #5a83ef;
+    color: white;
     
   }
   #button-text{
     color: black;
   }
   #contact-button:hover{
-    background-color: #0DD7D7;
+    background-color: gray;
+    color: black;
     
   }
   #image-background{
@@ -148,10 +151,26 @@
     height: 200px
   }
   .card-heading{
+    padding: 20px;
     text-align: center;
   }
   .card-text{
     padding: 10px;
+  }
+
+  .socials-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+  }
+  .social{
+    width: 50px;
+    height: 50px;
+  }
+  .social-image{
+    height: 100%;
+    width: 100%;
   }
   @media screen and (max-width: 500px) {
     .menu-item {
